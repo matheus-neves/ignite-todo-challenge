@@ -8,6 +8,7 @@ export const GlobalStyles = createGlobalStyle`
     --gray-300: #808080;
     --gray-400: #333333;
     --gray-500: #262626;
+    --gray-600: #1a1a1a;
     --gray-700: #0d0d0d;
 
     --blue-300: #4ea8de;
@@ -26,7 +27,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    background: var(--gray-400);
+    background: var(--gray-600);
     color: var(--gray-100);
     -webkit-font-smoothing: antialiased;
   }
@@ -35,5 +36,11 @@ export const GlobalStyles = createGlobalStyle`
     font-family: Inter, sans-serif;
     font-weight: 400;
     font-size: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    html {
+      font-size: 87.5%;
+    }
   }
 `;
