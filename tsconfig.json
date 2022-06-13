@@ -23,7 +23,9 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "~/*": ["src/*"]
+      "@root/*": ["src/*"],
+      "@styles/*": ["src/styles/*"],
+      "@assets/*": ["src/assets/*"]
     }
   },
   "include": ["vite.config.ts", "**/*.ts", "**/*.tsx"],
