@@ -25,7 +25,8 @@
     "paths": {
       "@root/*": ["src/*"],
       "@styles/*": ["src/styles/*"],
-      "@assets/*": ["src/assets/*"]
+      "@assets/*": ["src/assets/*"],
+      "@components/*": ["src/components/*"],
     }
   },
   "include": ["vite.config.ts", "**/*.ts", "**/*.tsx"],
