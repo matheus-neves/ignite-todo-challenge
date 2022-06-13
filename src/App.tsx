@@ -1,10 +1,15 @@
 import { GlobalStyles } from '@styles/globalStyles';
+import { Header } from '@components/Header';
+import { Wrapper } from '@styles/layout';
 
 export function App() {
   return (
     <>
       <GlobalStyles />
-      <h1>Hello World</h1>
+      <Header />
+      <Wrapper>
+        <h1>Tasks</h1>
+      </Wrapper>
     </>
   );
 }
