@@ -36,6 +36,7 @@ export const GlobalStyles = createGlobalStyle`
     font-family: Inter, sans-serif;
     font-weight: 400;
     font-size: 1rem;
+    line-height: 1.4;
   }
 
   @media (max-width: 768px) {

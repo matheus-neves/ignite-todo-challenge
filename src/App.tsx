@@ -1,6 +1,7 @@
 import { GlobalStyles } from '@styles/globalStyles';
 import { Header } from '@components/Header';
 import { Wrapper } from '@styles/layout';
+import { FormAddTask } from '@root/components/FormAddTask';
 
 export function App() {
   return (
@@ -8,7 +9,7 @@ export function App() {
       <GlobalStyles />
       <Header />
       <Wrapper>
-        <h1>Tasks</h1>
+        <FormAddTask />
       </Wrapper>
     </>
   );
