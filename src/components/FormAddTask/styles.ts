@@ -13,7 +13,7 @@ export const FormContainer = styled.form`
     padding: 1rem;
     background: var(--gray-500);
     border-radius: 8px;
-    border: 1px solid var(--gray-700);
+    border: 1px solid transparent;
     color: var(--gray-100);
     outline: none;
 
@@ -28,6 +28,7 @@ export const FormContainer = styled.form`
 
   button {
     padding: 1rem;
+    height: 3.375rem;
     background: var(--blue-500);
     color: var(--gray-100);
     border-radius: 8px;
