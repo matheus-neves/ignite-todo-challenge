@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const Wrapper = styled.main`
   display: flex;
   flex-direction: column;
-  gap: 4rem;
 
   margin: 0 auto;
 

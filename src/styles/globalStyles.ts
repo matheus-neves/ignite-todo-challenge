@@ -39,6 +39,10 @@ export const GlobalStyles = createGlobalStyle`
     line-height: 1.4;
   }
 
+  ul {
+    list-style: none;
+  }
+
   @media (max-width: 768px) {
     html {
       font-size: 87.5%;

@@ -3,7 +3,7 @@ import CheckIcon from '@assets/check.svg';
 
 export const TaskContainer = styled.li`
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   align-content: space-between;
   background: var(--gray-500);
   border: 1px solid var(--gray-400);
@@ -18,7 +18,8 @@ export const TaskContainer = styled.li`
   label {
     position: relative;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    flex: 1;
     cursor: pointer;
 
     span {
@@ -30,9 +31,6 @@ export const TaskContainer = styled.li`
     appearance: none;
     display: grid;
     cursor: pointer;
-    width: 1rem;
-    height: 1rem;
-    margin-top: 0.2rem;
     border-radius: 50%;
 
     &::before {

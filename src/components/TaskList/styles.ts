@@ -3,12 +3,12 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
 
   header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 4rem 0 1.5rem;
   }
 `;
 
@@ -37,7 +37,7 @@ export const TaskCounter = styled.strong<TaskCounterProps>`
   }
 `;
 
-export const NoTaskBoxFeedback = styled.div`
+export const EmptyTaskBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
