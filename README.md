@@ -1,6 +1,5 @@
 
-<p align="center"><img width="700" src=".github/demo.gif"/></p>
-<br />
+<p align="center"><img width="500" src=".github/demo.gif"/></p>
 
 <h3 align="center">
   Challenge: ToDo List
