@@ -21,12 +21,12 @@ export function FormAddTask({ onAddTask }: FormAddTaskProps) {
   return (
     <FormContainer>
       <input
-        placeholder='Adicione uma nova tarefa'
+        placeholder='Add a new task'
         value={value}
         onChange={(e) => setValue(e.target.value)}
       />
       <button type='submit' onClick={handleAddTask}>
-        Criar
+        Create
         <PlusCircle size={20} />
       </button>
     </FormContainer>

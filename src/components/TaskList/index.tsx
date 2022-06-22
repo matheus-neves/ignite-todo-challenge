@@ -9,8 +9,6 @@ export function TaskList() {
 
   const handleAddTask = useCallback(
     (value: string) => {
-      console.log(value);
-
       setTasks([
         ...tasks,
         {
@@ -26,7 +24,6 @@ export function TaskList() {
   const handleDeleteTask = useCallback(
     (taskId: number) => {
       const filteredTasks = tasks.filter((task) => task.id !== taskId);
-
       setTasks(filteredTasks);
     },
     [tasks],
@@ -63,22 +60,22 @@ export function TaskList() {
       <FormAddTask onAddTask={handleAddTask} />
       <header>
         <TaskCounter>
-          Tarefas criadas <span>{tasks.length}</span>
+          Created Tasks <span>{tasks.length}</span>
         </TaskCounter>
         <TaskCounter color='purple'>
-          Concluídas{' '}
+          Completed{' '}
           <span>
-            {counterTasksDone} de {tasks.length}
+            {counterTasksDone} of {tasks.length}
           </span>
         </TaskCounter>
       </header>
 
       {!tasks?.length && (
         <EmptyTaskBox>
-          <img src={ClipboardIcon} alt='Ícone de prancheta' />
+          <img src={ClipboardIcon} alt='Clipboard Icon' />
           <div>
-            <strong>Você ainda não tem tarefas cadastradas</strong>
-            <p>Crie tarefas e organize seus itens a fazer</p>
+            <strong>You don't have tasks created yet</strong>
+            <p>Create tasks and organize your to-do items</p>
           </div>
         </EmptyTaskBox>
       )}
